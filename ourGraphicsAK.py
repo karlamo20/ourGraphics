@@ -23,3 +23,24 @@ bSand.draw(kWin)
 ocean = Rectangle(Point(600, 200), Point(0, 400))
 ocean.setFill(color_rgb(0, 119, 190))
 ocean.draw(kWin)
+
+#clouds
+
+cloud = Circle(Point(100,560), 20)
+cloud.setFill(color_rgb(245, 245, 245))
+cloud.draw(kWin)
+
+clouds = Circle(Point(100,570), 20)
+clouds.setFill(color_rgb(245, 245, 245))
+clouds.draw(kWin)
+
+cloudss = Circle(Point(110, 575), 20)
+cloudss.setFill(color_rgb(245, 245, 245))
+cloudss.draw(kWin)
+
+cloudsss = Circle(Point(115, 575), 20)
+cloudsss.setFill(color_rgb(245, 245, 245))
+cloudsss.draw(kWin)
+
+kWin.getMouse()
+kWin.close()
