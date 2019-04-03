@@ -1,3 +1,4 @@
+#ourGraphics.py w/ Karla and Aziza
 
 from graphics import *
 
@@ -26,6 +27,10 @@ ocean.draw(kWin)
 
 #beginning UMBRELLA branch
 
-stick = Rectangle(Point(450, 35), Point(460, 80))
+stick = Rectangle(Point(450, 20), Point(460, 80))
 stick.setFill(color_rgb(169, 169, 169))
 stick.draw(kWin)
+
+pluie = Polygon(Point(410, 70), Point(500, 70), Point(455, 130))
+pluie.setFill(color_rgb(200, 162, 200))
+pluie.draw(kWin)
