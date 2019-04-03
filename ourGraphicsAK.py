@@ -27,6 +27,10 @@ ocean.draw(kWin)
 
 #beginning UMBRELLA branch
 
+blanket = Rectangle(Point(410, 45), Point(500, 10))
+blanket.setFill(color_rgb(162, 200, 162))
+blanket.draw(kWin)
+
 stick = Rectangle(Point(450, 20), Point(460, 80))
 stick.setFill(color_rgb(169, 169, 169))
 stick.draw(kWin)
