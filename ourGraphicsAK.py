@@ -29,12 +29,15 @@ ocean.draw(kWin)
 
 blanket = Rectangle(Point(410, 45), Point(500, 10))
 blanket.setFill(color_rgb(162, 200, 162))
+blanket.setOutline(color_rgb(162, 200, 162))
 blanket.draw(kWin)
 
 stick = Rectangle(Point(450, 20), Point(460, 80))
 stick.setFill(color_rgb(169, 169, 169))
+stick.setOutline(color_rgb(169, 169, 169))
 stick.draw(kWin)
 
 pluie = Polygon(Point(410, 70), Point(500, 70), Point(455, 130))
 pluie.setFill(color_rgb(200, 162, 200))
+pluie.setOutline(color_rgb(200, 162, 200))
 pluie.draw(kWin)
