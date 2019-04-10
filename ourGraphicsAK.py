@@ -2,13 +2,21 @@
 
 from graphics import *
 
-##def puff_draw (
-    
+def draw_puff(pX, pY, pRad, pCol, pWin):
+    puff = Circle(Point(pX, pY), pRad)
+    puff.setFill(pCol)
+    puff.setOutline(pCol)
+    puff.draw(pWin)
 
-kWin = GraphWin("Beach", 600, 600)
-kWin.setCoords(0, 0, 600, 600)
+bchW = 600
+bchH = 600
 
-back = Rectangle(Point(0, 0), Point(600,600))
+kWin = GraphWin("Beach", bchW, bchH)
+kWin.setCoords(0, 0, bchW, bchH)
+
+
+
+back = Rectangle(Point(0, 0), Point(bchW, bchH))
 back.setFill(color_rgb(254, 205, 159))
 back.setOutline(color_rgb(254, 205, 159))
 back.draw(kWin)
@@ -35,12 +43,11 @@ ocean.draw(kWin)
 
 #clouds
 
-puff = Circle(Point(0,560), 20)
-puff.setFill(color_rgb(245, 245, 245))
-puff.setOutline(Color_rgb(245, 245, 245))
-puff.draw(kWin)
-
-
+draw_puff(0, 560, 20, "white", kWin)
+draw_puff(100, 560, 20, "white", kWin)
+draw_puff(100, 570, 20, "white", kWin)
+draw_puff(110, 575, 20, "white", kWin)
+draw_puff(115, 575, 20, "white", kWin)
 
 
 
