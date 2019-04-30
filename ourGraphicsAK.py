@@ -8,6 +8,8 @@ def draw_puff(pX, pY, pRad, pCol, pWin): #function for clouds
     puff.setOutline(pCol)
     puff.draw(pWin)
 
+#def draw_bird
+
 bchW = 600
 bchH = 600
 
