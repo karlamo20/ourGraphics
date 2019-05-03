@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #This code will make a beach with different types of functions
-=======
-#ourGraphics.py w/ Karla and Aziza
->>>>>>> ef856a09ad38a87074a0cf2cb6e54b62e21abe3d
 
 from graphics import *
 
@@ -11,8 +7,6 @@ def draw_puff(pX, pY, pRad, pCol, pWin): #function for clouds
     puff.setFill(pCol)
     puff.setOutline(pCol)
     puff.draw(pWin)
-
-#def draw_bird
 
 bchW = 600
 bchH = 600
@@ -56,7 +50,6 @@ ocean.setFill(color_rgb(0, 119, 190))
 ocean.setOutline(color_rgb(0, 119, 190))
 ocean.draw(kWin)
 
-<<<<<<< HEAD
 #cloud
 draw_puff(0, 570, 20, "white", kWin) #top layer pf clouds 
 draw_puff(30, 575, 20, "white", kWin)
@@ -82,23 +75,18 @@ draw_puff(120, 540, 20, "white", kWin)
 draw_puff(90, 545, 20, "white", kWin)
 #end of cloud
 
+#Begging of bird#
+bird = Polygon(Point(400,580), Point(420, 570), Point(440, 580))
+bird.setFill("black")
+bird.setOutline(color_rgb(255,255,240))
+bird.draw(kWin)
+
+bird = Polygon(Point(510,580), Point(530, 570), Point(550, 580))
+bird.setFill("black")
+bird.setOutline(color_rgb(255,255,240))
+bird.draw(kWin)
+
+
+
 kWin.getMouse()
 kWin.close()
-=======
-#beginning UMBRELLA branch
-
-blanket = Rectangle(Point(410, 45), Point(500, 10))
-blanket.setFill(color_rgb(162, 200, 162))
-blanket.setOutline(color_rgb(162, 200, 162))
-blanket.draw(kWin)
-
-stick = Rectangle(Point(450, 20), Point(460, 80))
-stick.setFill(color_rgb(169, 169, 169))
-stick.setOutline(color_rgb(169, 169, 169))
-stick.draw(kWin)
-
-pluie = Polygon(Point(410, 70), Point(500, 70), Point(455, 130))
-pluie.setFill(color_rgb(200, 162, 200))
-pluie.setOutline(color_rgb(200, 162, 200))
-pluie.draw(kWin)
->>>>>>> ef856a09ad38a87074a0cf2cb6e54b62e21abe3d
